@@ -1,9 +1,9 @@
 name: Tests
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   tests:
@@ -13,8 +13,6 @@ jobs:
       matrix:
         # add any other Typst versions that your package should support
         typst-version:
-          - typst: 0.14
-            tytanic: 0.4
           - typst: 0.15
             tytanic: 0.4
             # the docs don't need to build with all versions supported by the package;
@@ -41,18 +39,3 @@ jobs:
 
       - name: Run test suite
         run: just test
-
-      - name: Archive test results
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: typst-${{ steps.setup-typst.outputs.typst-version }}-test-results
-          path: |
-            tests/**/diff/*.png
-            tests/**/out/*.png
-            tests/**/ref/*.png
-          retention-days: 5
-
-      - name: Build docs
-        if: ${{ matrix.typst-version.doc }}
-        run: just doc

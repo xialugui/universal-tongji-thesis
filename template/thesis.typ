@@ -1,10 +1,4 @@
-#import "../lib.typ": documentclass, indent, no-indent, word-count-cjk, total-words, bilingual-figure
-#import "../utils/zh-aio.typ":*
-#import "../utils/herodot/lib.typ":*
-#import "@preview/algorithmic:1.0.7"
-#import "@preview/ez-algo:0.1.1": ez-algo
-#import "@preview/oxdraw:0.1.0": *
-#import "../utils/style.typ":字体, 字号
+#import "@preview/universal-tongji-thesis:0.1.0":*
 
 #let (
   // 布局函数
