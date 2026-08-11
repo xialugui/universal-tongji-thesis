@@ -42,7 +42,7 @@ jobs:
 
       - name: Build package
         run: |
-          just package out
+          . scripts/package "out"
 
       - name: Checkout package registry
         uses: actions/checkout@v4
