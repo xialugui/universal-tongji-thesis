@@ -1,4 +1,4 @@
-#import "/lib.typ" as my-package
+#import "../../src/lib.typ": *
 
 // TODO real tests
 #assert(true)
