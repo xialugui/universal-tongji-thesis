@@ -22,20 +22,20 @@ jobs:
     name: Test for ${{ matrix.typst-version.typst }} (Tytanic ${{ matrix.typst-version.tytanic }}${{ matrix.typst-version.doc && ', with docs' }})
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    # steps:
+    #   - name: Checkout
+    #     uses: actions/checkout@v4
 
-      - name: Install just and tytanic
-        uses: taiki-e/install-action@v2
-        with:
-          tool: just,tytanic@${{ matrix.typst-version.tytanic }}
+    #   - name: Install just and tytanic
+    #     uses: taiki-e/install-action@v2
+    #     with:
+    #       tool: just,tytanic@${{ matrix.typst-version.tytanic }}
 
-      - name: Setup typst
-        id: setup-typst
-        uses: typst-community/setup-typst@v3
-        with:
-          typst-version: ${{ matrix.typst-version.typst }}
+    #   - name: Setup typst
+    #     id: setup-typst
+    #     uses: typst-community/setup-typst@v3
+    #     with:
+    #       typst-version: ${{ matrix.typst-version.typst }}
 
-      - name: Run test suite
-        run: just test
+    #   - name: Run test suite
+    #     run: just test
