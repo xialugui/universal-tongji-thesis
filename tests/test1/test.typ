@@ -1,3 +1,3 @@
-#import "/src/lib.typ" as my-package
+#import "/lib.typ" as my-package
 
 Hello World

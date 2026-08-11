@@ -1,10 +1,10 @@
-#import "../src/lib.typ": documentclass, indent, no-indent, word-count-cjk, total-words, bilingual-figure
-#import "../src/utils/zh-aio.typ":*
-#import "../src/utils/herodot/lib.typ":*
+#import "../lib.typ": documentclass, indent, no-indent, word-count-cjk, total-words, bilingual-figure
+#import "../utils/zh-aio.typ":*
+#import "../utils/herodot/lib.typ":*
 #import "@preview/algorithmic:1.0.7"
 #import "@preview/ez-algo:0.1.1": ez-algo
 #import "@preview/oxdraw:0.1.0": *
-#import "../src/utils/style.typ":字体, 字号
+#import "../utils/style.typ":字体, 字号
 
 #let (
   // 布局函数
@@ -124,7 +124,7 @@
 #linebreak()
 #linebreak()
 #linebreak()
-#linebreak() 
+#linebreak()
 
 
 “自然界只有一个，自然现象遵循着不依赖于人类意志的客观规律。然而，数理科学中却有着两套反映这些规律的体系：确定性描述和概率论描述。”@agahiModifiedKullbackLeibler2019 虽然概率论方法的发展引起了科学家和哲学家们关于自然本质的讨论，但是直到本世纪五十年代以前，两套方法在各自独立的领域内都得到了长足的发展。六十年代以来，由于本质非线性行为特别是混沌、分形等现象的发现和深入研究，随机方法的重要性得到了日益深刻的认识 @altaheriDeepLearningTechniques2023b。人们发现，在确定性非线性系统的长期演化行为中会出现与随机行为不能加以区别的现象。而采用概率密度演化描述的方法却能很好地描述其演化密度的长期行为 @alwasitiMotorImageryClassification2020。
@@ -140,7 +140,7 @@
 #linebreak()
 #linebreak()
 #linebreak()
-#linebreak() 
+#linebreak()
 
 #pagebreak()
 = 测试章节
@@ -150,7 +150,7 @@
 ……
 
 #linebreak()
-== 结构非线性构形状态转移过程及其演化方程 
+== 结构非线性构形状态转移过程及其演化方程
 
 
 ……
@@ -186,7 +186,7 @@ $<2>
 
 ……
 
-== 研究展望 
+== 研究展望
 本文的研究虽然取得了初步的成功，但依然任重道远，尚有许多有待进一步深入进行的研究工作，这里择其要者简要讨论如下：
 
 ……
