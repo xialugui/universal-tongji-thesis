@@ -2,6 +2,8 @@
 
 适用于同济大学学位论文的Typst模板
 
+[中文](./README.md) [English](./README_en.md)
+
 > [!WARNING]
 > 本模板正处于积极开发阶段，存在一些格式问题，适合尝鲜Typst特性
 >
@@ -86,6 +88,9 @@ typst compile thesis.typ
 ### 参考文献
 
 - 学校对参考文献格式的要求与标准的 `GB/T 7714-2015 numeric` 格式存在差异。
+
+## 其他
+- [学校logo](https://photo.tongji.edu.cn/xb/xbxx.htm?type=3&id=64db13b627fa8cfa8c8eb30e0)
 
 ## 致谢
 

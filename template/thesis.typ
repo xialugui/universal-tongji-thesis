@@ -1,5 +1,6 @@
-#import "@preview/universal-tongji-thesis:0.1.0": documentclass, indent, no-indent, word-count-cjk, total-words, bilingual-figure
-
+#import "@preview/universal-tongji-thesis:0.1.0": (
+  bilingual-figure, documentclass, indent, no-indent, total-words, word-count-cjk,
+)
 #let (
   // 布局函数
   twoside,
@@ -77,7 +78,7 @@
 
 // 英文摘要
 #abstract-en(
-  keywords: ("Stochastic Structure", "Markov Process", "Nonlinear Configuration State,", "Difference Method",),
+  keywords: ("Stochastic Structure", "Markov Process", "Nonlinear Configuration State,", "Difference Method"),
 )[
   In practical engineering, the structures usually exhibits strong nonlinearity coupled with randomness of the involved parameters. This makes it almost impossible to exactly predict nonlinear response of the structures, particularly for the concrete structures. To tackle the difficulty, it is necessary to capture the nonlinear performance of the structures in the sense of probability, instead of purely deterministic standpoint. The present thesis is the result of the efforts devoted to developing the probability density evolution method for analysis of nonlinear stochastic structures.
 
@@ -157,12 +158,12 @@
 + 结构非线性构形状态转移过程
 当广义控制截面具有@eqt:2 的广义本构关系时，可定义如下的截面示性数
 $
-  Phi ( Theta ) = cases(0 \, & "if" & E = E _ ( 0 ), 1 \, & "if" & E = E _ ( 1 ))
+  Phi ( Theta ) = cases(0 \, & "if" & E = E_( 0 ), 1 \, & "if" & E = E_( 1 ))
 $<2>
 显然，结构的非线性构形状态就是结构的塑性铰（或发生塑性屈服截面）分布状态。结构的非线性演化过程可以通过可数状态空间中的非线性构形的状态转移过程来研究，如@eqt:2。
 
 #figure(caption: [非线性构形状态转移过程示意图])[
-  #image("images/2026-08-09-18-04-17.png")
+  #image("images/placeholder.jpg")
 ]
 
 #linebreak()
@@ -197,8 +198,7 @@ $<2>
 
 
 // 致谢
-#acknowledgement(
-  )[
+#acknowledgement()[
   逾尺的札记和研究纪录凝聚成这么薄薄的一本，高兴和欣慰之余，不禁感慨系之。记得鲁迅在一篇文章里写道：“人类的奋战前行的历史，正如煤的形成，当时用大量的木材，结果却只是一小块”。倘若这一小块有点意义的话，则是我读书生活的最好纪念，也令我对于即将迈入的新生活更加充满信心。
 
   回想读书生活，已经整整二十个年头，到同济求学将近六年，攻读博士学位也已四年了。进入同济大学以来，深深醉心于一流学府的大家风范。名师巨擘，各具特点；中西融合，文质相顾。处如此佳境以陶铸自我，实乃人生幸事。
